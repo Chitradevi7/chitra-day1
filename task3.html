@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Form Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(128, 39, 39, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        nav{
+         background-color: rgb(25, 27, 27);
+         text-align: center;
+     }
+     nav a{
+         color: rgb(231, 216, 216);
+         margin:0 15px;
+         font-weight: bold;
+     }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1> Contact Form Exercise</h1>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">contact</a> |
+      </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+           
+        </form>
+    </div>
+    <center><h5>&copy;2024 Training Website</h5></center>
+</body>
+</html>
